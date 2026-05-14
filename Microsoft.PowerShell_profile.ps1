@@ -1,6 +1,6 @@
 ### ThyKinslayer's PowerShell profile
 
-oh-my-posh init pwsh --config $Home\Documents\PowerShell\cobalt2.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config $Home\Documents\PowerShell\half-life.omp.json | Invoke-Expression
 zoxide init --cmd z powershell | Out-String | Invoke-Expression
 Import-Module -Name Terminal-Icons
 
@@ -34,7 +34,7 @@ Set-PSReadLineKeyHandler -Chord 'Ctrl+y' -Function Redo
 
 # Functions
 function Update-Profile {
-    Invoke-WebRequest -Uri https://github.com/ChrisTitusTech/powershell-profile/raw/main/Microsoft.PowerShell_profile.ps1 -OutFile $Profile
+    Invoke-WebRequest -Uri https://github.com/ThyKinslayer/powershell-profile/raw/main/Microsoft.PowerShell_profile.ps1 -OutFile $Profile
     Write-Host "Updated PowerShell Profile" -ForegroundColor Green
 }
 
